@@ -1,0 +1,27 @@
+name: Deploy GitHub pages
+on:
+  push:
+    branches:
+    - source
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v3
+      with:
+        submodules: true
+        fetch-depth: 0
+    - name: Hugo Setup
+      uses: peaceiris/actions-hugo@v2.5.0
+      with:
+        hugo-version: 'latest'
+        extended: true
+    - name: Build
+      run: hugo --minify
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3.8.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: main
+        publish_dir: ./public

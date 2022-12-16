@@ -1,0 +1,33 @@
+baseURL: 'https://marcus.zoller.cc/'
+languageCode: en-US
+theme: "toha"
+title: "Marcus Zoller"
+
+outputs:
+  home:
+  - HTML
+  - RSS
+  - JSON
+
+enableEmoji: true
+
+params:
+  gitRepo: https://github.com/mazocode/mazocode
+  gitBranch: main
+
+  footer:
+    newsletter:
+      enable: false
+
+  features:
+    comment:
+      enable: false
+    analytics:
+      enabled: false
+
+  enableBlogPost: true
+
+  darkMode:
+    enable: true
+    provider: darkreader
+    default: system
