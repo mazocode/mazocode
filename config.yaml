@@ -61,7 +61,7 @@ params:
     notes:
       enable: true
 
-  enableBlogPost: true
+  enableBlogPost: false
 
   darkMode:
     enable: true
