@@ -1,5 +1,7 @@
 baseURL: 'https://marcus.zoller.cc/'
+
 languageCode: en-US
+
 theme: "toha"
 title: "Marcus Zoller"
 
@@ -9,21 +11,55 @@ outputs:
   - RSS
   - JSON
 
+languages:
+  en:
+    languageName: English
+    weight: 1
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 enableEmoji: true
 
 params:
   gitRepo: https://github.com/mazocode/mazocode
   gitBranch: main
 
+  topNavbar:
+    maxVisibleSections: 5
+
   footer:
     newsletter:
       enable: false
+    disclaimer:
+      enable: false
+  
+  showFlags: true
+  
+  enableTags: true
 
   features:
     comment:
       enable: false
+    
     analytics:
       enabled: false
+
+    portfolio:
+      enable: false
+
+    blog:
+      enable: false
+      shareButtons:
+        facebook: false
+        twitter: false
+        linkedin: false
+        reddit: false
+
+    notes:
+      enable: true
 
   enableBlogPost: true
 
