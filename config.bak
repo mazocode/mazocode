@@ -1,0 +1,121 @@
+baseURL: 'https://marcus.zoller.cc/'
+
+languageCode: en-US
+
+theme: "hugo-refresh"
+title: "Marcus Zoller"
+
+outputs:
+  home:
+  - HTML
+  - RSS
+  - JSON
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+enableEmoji: true
+
+params:
+  gitRepo: https://github.com/mazocode/mazocode
+  gitBranch: main
+
+  #refresh 
+
+  loading:
+    # option to specify the loading image
+    # the starting folder is configure in "assetDir" of this file
+    image: "/images/loaders/rings.svg"
+  
+  navbar:
+    # option to specify the font used in the navbar
+    fontFamily: "Open Sans"
+    # option to show the little logos on the side of the navbar items
+    showIcons: false
+
+  homepage:
+    # this options let you specify if you want a link to the homepage
+    # it can be: "none", "menu", "footer" or "menu+footer"
+    # linkPosition: "footer" 
+    # this options let you specify the text of the link to the homepage
+    # linkText: "Homepage"  
+    # option to specify the title in the homepage
+    title: Marcus Zoller
+    # option to specify the subtitle in the homepage
+    subtitle: Personal website
+    # option to specify image in the homepage
+    image: "/images/site/logo.png" # worker.svg 
+    # option to specify the width of the image in the homepage
+    imageWidth: 50px
+
+  pagNotFound:
+    # option to specify the main picture of the sidebar
+    # the starting folder is configure in "assetDir" of this file
+    image: "/images/avataaars_404.png"
+    # option to specify the title of the 404 page
+    title: 404 Page Not Found :(
+    # option to specify the subtitle of the 404 page
+    subtitle: This is not the page you were looking for...
+    # option to specify the width of the image in the 404 page
+    imageWidth: 500px
+
+  footer:
+    copyright: Marcus Zoller - 2022
+  # toa
+
+  background: images/site/background.webp
+
+  favicon: /images/site/favicon.png
+
+  logo:
+    main: /images/site/logo.png
+    inverted: /images/site/inverted.png
+    favicon: /images/site/favicon.png
+
+  topNavbar:
+    maxVisibleSections: 5
+
+  footer:
+    newsletter:
+      enable: false
+    disclaimer:
+      enable: false
+  
+  showFlags: true
+  
+  enableTags: true
+
+  features:
+    comment:
+      enable: false
+    
+    analytics:
+      enabled: false
+
+    portfolio:
+      enable: false
+
+    blog:
+      enable: false
+      shareButtons:
+        facebook: false
+        twitter: false
+        linkedin: false
+        reddit: false
+
+    notes:
+      enable: true
+
+  enableBlogPost: false
+
+  darkMode:
+    enable: true
+    provider: darkreader
+    default: system
