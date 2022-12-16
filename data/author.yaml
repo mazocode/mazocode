@@ -1,0 +1,10 @@
+name: "Marcus Zoller"
+nickname: "Marcus"
+greeting: "Hi, I am"
+image: images/author/marcus.jpg
+
+contactInfo:
+  github: mazocode
+
+summary:
+  - I am the founder of IDNT
